@@ -1,2 +1,2 @@
-guestroot/var/lib/jenkins/slave.jar /var/lib/jenkins/slave.jar mode=644 uid=jenkins gid=jenkins
-guestroot/var/lib/jenkins/.ssh/authorized_keys /var/lib/jenkins/.ssh/authorized_keys mode=644 uid=jenkins gid=jenkins
+guestroot/var/lib/jenkins/slave.jar /var/lib/jenkins/slave.jar mode=644 uid=498 gid=498
+guestroot/var/lib/jenkins/.ssh/authorized_keys /var/lib/jenkins/.ssh/authorized_keys mode=644 uid=498 gid=498
