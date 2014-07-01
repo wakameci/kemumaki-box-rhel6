@@ -1,2 +1,1 @@
 guestroot/etc/sysconfig/iptables /etc/sysconfig/iptables mode=644
-guestroot/etc/udev/makedev.d/50-udev.nodes /etc/udev/makedev.d/50-udev.nodes mode=644
