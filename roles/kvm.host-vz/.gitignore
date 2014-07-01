@@ -1,2 +1,1 @@
-*.raw
-*.pid
+../../vmbuilder.conf.d/.gitignore
