@@ -9,6 +9,14 @@ General
 + OS: CentOS-6.5 x86_64
 + Disk: 40 GB
 
+Accounts
+--------
+
+| username | password |
+|:---------|:---------|
+| root     | (locked) |
+| kemukins | kemukins |
+
 Build Environment
 -----------------
 
