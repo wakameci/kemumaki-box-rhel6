@@ -1,11 +1,26 @@
-VMS=kvm.skel vz.skel
+VMS=kvm.kemukins kvm.vzkemukins vagrant.virtualbox.kemukins vagrant.virtualbox.vzkemukins virtualbox.kemukins virtualbox.vzkemukins vz.kemukins
 
 all:
 
-kvm.skel:
+kvm.kemukins:
 	(cd $@ && make)
 
-vz.skel:
+kvm.vzkemukins:
+	(cd $@ && make)
+
+vagrant.virtualbox.kemukins:
+	(cd $@ && make)
+
+vagrant.virtualbox.vzkemukins:
+	(cd $@ && make)
+
+virtualbox.kemukins:
+	(cd $@ && make)
+
+virtualbox.vzkemukins:
+	(cd $@ && make)
+
+vz.kemukins:
 	(cd $@ && make)
 
 .PHONY: $(VMS)
