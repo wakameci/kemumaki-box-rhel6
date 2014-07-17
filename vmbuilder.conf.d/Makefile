@@ -15,4 +15,7 @@ run.sh:
 	../../vendor/vmbuilder/kvm/rhel/6/misc/kvm-ctl.sh render-runscript --config-path ./vmbuilder.conf > $@
 	chmod +x run.sh
 
+vz.kemukins:
+	(cd rootfs && time sudo tar zcvpf ../$@.`arch`.tar.gz .)
+
 .PHONY: run.sh
