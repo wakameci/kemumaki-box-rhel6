@@ -1,1 +1,1 @@
-../../vmbuilder.conf.d/postcopy.txt
+../../vmbuilder.conf.d/postcopy.host-vz.txt
