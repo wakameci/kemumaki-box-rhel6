@@ -83,6 +83,7 @@ Build Environment
 + bind-utils
 + nc
 + wireshark
++ s3cmd
 
 ### Debugging/Development tools
 
