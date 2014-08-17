@@ -22,7 +22,7 @@ Build Environment
 
 ### CI tool
 
-+ [jenkins](http://jenkins-ci.org/) 1.570
++ [jenkins](http://jenkins-ci.org/)
    + java-1.6.0-openjdk
    + dejavu-sans-fonts
 + jenkins plugins
