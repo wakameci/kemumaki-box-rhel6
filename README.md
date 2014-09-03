@@ -63,6 +63,10 @@ Build Environment
 + kernel-devel
 + perl
 
+### Ruby build tools
+
++ readline-devel
+
 ### VM image build tools
 
 + qemu-kvm
