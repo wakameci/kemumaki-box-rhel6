@@ -5,4 +5,6 @@
 #
 set -e
 
-time tar zScvf kemukins-6.4-x86_64.kvm.box box-disk1.raw
+. ./vmbuilder.conf
+
+time tar zScvf kemukins-${distro_ver}-x86_64.kvm.box box-disk1.raw
