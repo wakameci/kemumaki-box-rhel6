@@ -1,8 +1,11 @@
-VMS=kvm.kemukins kvm.vzkemukins vagrant.virtualbox.kemukins vagrant.virtualbox.vzkemukins virtualbox.kemukins virtualbox.vzkemukins vz.kemukins
+VMS=kvm.kemukins kvm.minimal kvm.vzkemukins vagrant.virtualbox.kemukins vagrant.virtualbox.vzkemukins virtualbox.kemukins virtualbox.vzkemukins vz.kemukins
 
 all:
 
 kvm.kemukins:
+	(cd $@ && make)
+
+kvm.minimal:
 	(cd $@ && make)
 
 kvm.vzkemukins:

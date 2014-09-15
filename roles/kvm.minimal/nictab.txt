@@ -1,0 +1,1 @@
+ifname=eth0  iftype=ethernet onboot=yes
