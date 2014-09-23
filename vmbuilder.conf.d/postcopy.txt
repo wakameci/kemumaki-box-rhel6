@@ -1,1 +1,2 @@
-guestroot/var/lib/jenkins/.ssh/authorized_keys /var/lib/jenkins/.ssh/authorized_keys mode=644 owner=498 group=498
+guestroot/var/lib/jenkins/.ssh/authorized_keys /var/lib/jenkins/.ssh/authorized_keys mode=644 owner=498 group=499
+guestroot/var/lib/jenkins/rbenv.sh /var/lib/jenkins/rbenv.sh mode=755 owner=498 group=499
