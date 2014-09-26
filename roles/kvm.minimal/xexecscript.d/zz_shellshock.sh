@@ -1,1 +1,0 @@
-../../../vmbuilder.conf.d/xexecscript.d/base/zz_shellshock.sh
