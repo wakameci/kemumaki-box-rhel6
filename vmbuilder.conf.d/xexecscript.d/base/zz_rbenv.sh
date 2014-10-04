@@ -12,6 +12,6 @@ chroot $1 su - jenkins <<'EOS'
     sleep 1
   done
 
-  tar zxvf /tmp/dot.rbenv.tar.gz -C /var/lib/jenkins/
+  tar zxf /tmp/dot.rbenv.tar.gz -C /var/lib/jenkins/
   rm /tmp/dot.rbenv.tar.gz
 EOS
