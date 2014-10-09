@@ -98,7 +98,6 @@ declare ostemplate=${ostemplate:-vz.kemukins.x86_64}
 declare ram=${ram:-$((128 * 8))M}
 declare swap=${swap:-$((128 * 4))M}
 
-#vzctl create ${ctid} --ostemplate centos-6-x86_64
 vzctl create ${ctid} --ostemplate ${ostemplate} --layout simfs
 
 vzctl set ${ctid} --netif_add eth0,,,,vzbr0 --save
