@@ -94,16 +94,19 @@ function install_ifcfg() {
 ## main
 
 declare ctid=${1:-101}
+declare ostemplate=${ostemplate:-vz.kemukins.x86_64}
+declare ram=${ram:-$((128 * 8))M}
+declare swap=${swap:-$((128 * 4))M}
 
 #vzctl create ${ctid} --ostemplate centos-6-x86_64
-vzctl create ${ctid} --ostemplate ${ostemplate:-vz.kemukins.x86_64} --layout simfs
+vzctl create ${ctid} --ostemplate ${ostemplate} --layout simfs
 
 vzctl set ${ctid} --netif_add eth0,,,,vzbr0 --save
 vzctl set ${ctid} --nameserver 8.8.8.8      --save
 vzctl set ${ctid} --hostname ct${ctid}.$(hostname) --save
 vzctl set ${ctid} --diskspace 20G           --save
-vzctl set ${ctid} --ram   ${ram:-$((128 * 8))M} --save
-vzctl set ${ctid} --swap ${swap:-$((128 * 4))M} --save
+vzctl set ${ctid} --ram  ${ram}             --save
+vzctl set ${ctid} --swap ${swap}            --save
 vzctl set ${ctid} --devnodes fuse:rw        --save
 
 install_mount_script ${ctid}
