@@ -96,7 +96,7 @@ function install_ifcfg() {
 declare ctid=${1:-101}
 
 #vzctl create ${ctid} --ostemplate centos-6-x86_64
-vzctl create ${ctid} --ostemplate vz.kemukins.x86_64 --layout simfs
+vzctl create ${ctid} --ostemplate ${ostemplate:-vz.kemukins.x86_64} --layout simfs
 
 vzctl set ${ctid} --netif_add eth0,,,,vzbr0 --save
 vzctl set ${ctid} --nameserver 8.8.8.8      --save
