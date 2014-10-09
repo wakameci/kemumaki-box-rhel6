@@ -103,13 +103,13 @@ declare swap=${swap:-$((128 * 4))M}
 
 vzctl create ${ctid} --ostemplate ${ostemplate} --layout simfs
 
-vzctl set ${ctid} --netif_add eth0,,,,vzbr0 --save
+vzctl set ${ctid} --netif_add  eth0,,,,vzbr0 --save
 vzctl set ${ctid} --nameserver ${nameserver} --save
 vzctl set ${ctid} --hostname   ${hostname}   --save
 vzctl set ${ctid} --diskspace  ${diskspace}  --save
-vzctl set ${ctid} --ram  ${ram}             --save
-vzctl set ${ctid} --swap ${swap}            --save
-vzctl set ${ctid} --devnodes fuse:rw        --save
+vzctl set ${ctid} --ram        ${ram}        --save
+vzctl set ${ctid} --swap       ${swap}       --save
+vzctl set ${ctid} --devnodes   fuse:rw       --save
 
 install_mount_script ${ctid}
 install_ifcfg        ${ctid}
