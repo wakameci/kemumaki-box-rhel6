@@ -102,8 +102,8 @@ vzctl set ${ctid} --netif_add eth0,,,,vzbr0 --save
 vzctl set ${ctid} --nameserver 8.8.8.8      --save
 vzctl set ${ctid} --hostname ct${ctid}.$(hostname) --save
 vzctl set ${ctid} --diskspace 20G           --save
-vzctl set ${ctid} --ram  $((128 * 8))M      --save
-vzctl set ${ctid} --swap $((128 * 4))M      --save
+vzctl set ${ctid} --ram   ${ram:-$((128 * 8))M} --save
+vzctl set ${ctid} --swap ${swap:-$((128 * 4))M} --save
 vzctl set ${ctid} --devnodes fuse:rw        --save
 
 install_mount_script ${ctid}
