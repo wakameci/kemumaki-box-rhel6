@@ -123,6 +123,8 @@ Only for OpenVZ Container based build worker
 + mysql-server
 + sqlite-devel
 + mysql-devel
++ chrpash
++ rpmdevtools
 
 Links
 -----
