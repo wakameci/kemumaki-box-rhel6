@@ -20,6 +20,9 @@ chroot $1 $SHELL -ex <<'EOS'
     gcc
     createrepo
     automake
+
+    chrpash
+    rpmdevtools
   "
   yum install -y --disablerepo=updates ${addpkgs}
 
