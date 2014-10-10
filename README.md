@@ -17,6 +17,21 @@ Accounts
 | root     | (locked) |
 | kemukins | kemukins |
 
+Current Boxes
+-------------
+
+KVM Guests:
+
++ kemukins-6.4-x86_64.kvm.box
++ kemukins-6.5-x86_64.kvm.box
++ minimal-6.4-x86_64.kvm.box
++ minimal-6.5-x86_64.kvm.box
++ vzkemukins-6.5-x86_64.kvm.box
+
+OpenVZ Container(s):
+
++ vz.kemukins.x86_64.tar.gz (on vzkemukins-6.5-x86_64)
+
 Build Environment
 -----------------
 
