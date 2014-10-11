@@ -6,8 +6,12 @@ Kemukins build environment provides rpmbuild and vmimage file build.
 General
 -------
 
-+ OS: CentOS-6.5 x86_64
-+ Disk: 40 GB
++ [OS](vmbuilder.conf#L5-L6)
+  + CentOS-6.5 x86_64
+  + CentOS-6.4 x86_64
++ Disk
+  + [rootfs: 40 GB](vmbuilder.conf.d/disk.conf#L1)
+  + [swap: 1 GB](vmbuilder.conf.d/disk.conf#L2)
 
 Accounts
 --------
