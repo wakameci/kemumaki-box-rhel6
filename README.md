@@ -129,6 +129,7 @@ Only for OpenVZ Container based build worker
 + mysql-devel
 + chrpath
 + rpmdevtools
++ epel-release
 
 Links
 -----
