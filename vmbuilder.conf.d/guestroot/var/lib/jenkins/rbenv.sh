@@ -59,4 +59,10 @@ case "${1}" in
   install)
     install_ruby ${2}
     ;;
+  pack)
+    tar zcvf /tmp/dot.rbenv.tar.gz .rbenv/
+    ;;
+  sync)
+    s3cmd sync -P /tmp/dot.rbenv.tar.gz s3://dlc.wakame.axsh.jp/wakameci/kemukins-box-rhel6/current/dot.rbenv.tar.gz
+    ;;
 esac
