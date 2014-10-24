@@ -56,6 +56,9 @@ function install_ruby() {
 }
 
 case "${1}" in
+  exec)
+    rbenv ${@}
+    ;;
   install)
     install_ruby ${2}
     ;;
