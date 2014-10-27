@@ -1,0 +1,4 @@
+guestroot/var/lib/jenkins/.ssh/authorized_keys /var/lib/jenkins/.ssh/authorized_keys mode=644 owner=498 group=497
+guestroot/home/kemukins/lxcctl.sh    /home/kemukins/lxcctl.sh    mode=755
+guestroot/etc/sysctl.conf   /etc/sysctl.conf
+guestroot/etc/rc.d/rc.local /etc/rc.d/rc.local mode=755
