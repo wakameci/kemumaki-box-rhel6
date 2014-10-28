@@ -31,10 +31,15 @@ KVM Guests:
 + minimal-6.4-x86_64.kvm.box
 + minimal-6.5-x86_64.kvm.box
 + vzkemukins-6.5-x86_64.kvm.box
++ lxckemukins-6.5-x86_64.kvm.box
 
 OpenVZ Container(s):
 
 + vz.kemukins.x86_64.tar.gz (on vzkemukins-6.5-x86_64)
+
+Linux Container(s):
+
++ vz.kemukins.x86_64.tar.gz (on lxckemukins-6.5-x86_64)
 
 Build Environment
 -----------------
