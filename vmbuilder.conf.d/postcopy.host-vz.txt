@@ -1,4 +1,5 @@
 guestroot/var/lib/jenkins/.ssh/authorized_keys /var/lib/jenkins/.ssh/authorized_keys mode=644 owner=498 group=497
+guestroot/var/lib/jenkins/.ssh/config /var/lib/jenkins/.ssh/config mode=644 owner=498 group=497
 guestroot/home/kemukins/vzctl.sh    /home/kemukins/vzctl.sh    mode=755
 guestroot/etc/modprobe.d/openvz.conf /etc/modprobe.d/openvz.conf
 guestroot/etc/rc.d/rc.local /etc/rc.d/rc.local mode=755
