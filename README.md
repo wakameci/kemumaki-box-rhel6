@@ -7,8 +7,10 @@ General
 -------
 
 + [OS](vmbuilder.conf#L5-L6)
-  + CentOS-6.5 x86_64
+  + CentOS-6.3 x86_64
   + CentOS-6.4 x86_64
+  + CentOS-6.5 x86_64
+  + CentOS-6.6 x86_64
 + Disk
   + [rootfs: 40 GB](vmbuilder.conf.d/disk.conf#L1)
   + [swap: 1 GB](vmbuilder.conf.d/disk.conf#L2)
