@@ -11,5 +11,5 @@ for ctid in 10{1..3}; do
     lxc-stop    -n ${ctid}
     lxc-destroy -n ${ctid}
   fi
-  /home/kemukins/lxcctl.sh ${ctid}
+  /home/kemumaki/lxcctl.sh ${ctid}
 done
