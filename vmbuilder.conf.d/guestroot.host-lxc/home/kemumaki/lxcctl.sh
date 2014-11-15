@@ -85,7 +85,7 @@ function install_ifcfg() {
 declare ctid=${1:-101}
 
 mkdir -p /lxc/private/${ctid}
-tar zpxf /lxc/template/cache/vz.kemukins.x86_64.tar.gz -C /lxc/private/${ctid}/
+tar zpxf /lxc/template/cache/vz.kemumaki.x86_64.tar.gz -C /lxc/private/${ctid}/
 sed -i s,^HOSTNAME=.*,HOSTNAME=ct${ctid}.$(hostname), /lxc/private/${ctid}/etc/sysconfig/network
 
 install_lxc_conf ${ctid}

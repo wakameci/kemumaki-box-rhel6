@@ -9,5 +9,5 @@ set -e
 
 (
  cd rootfs
- time sudo tar zcpf ../vz.kemukins.`arch`.tar.gz .
+ time sudo tar zcpf ../vz.kemumaki.`arch`.tar.gz .
 )

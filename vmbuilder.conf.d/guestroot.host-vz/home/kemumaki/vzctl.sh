@@ -94,7 +94,7 @@ function install_ifcfg() {
 ## main
 
 declare ctid=${1:-101}
-declare ostemplate=${ostemplate:-vz.kemukins.x86_64}
+declare ostemplate=${ostemplate:-vz.kemumaki.x86_64}
 declare nameserver=${nameserver:-8.8.8.8}
 declare hostname=${hostname:-ct${ctid}.$(hostname)}
 declare diskspace=${diskspace:-20G}

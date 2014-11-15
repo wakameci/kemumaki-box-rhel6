@@ -1,7 +1,7 @@
-kemukins-box-rhel6
+kemumaki-box-rhel6
 ==================
 
-Kemukins build environment provides rpmbuild and vmimage file build.
+Kemumaki build environment provides rpmbuild and vmimage file build.
 
 General
 -------
@@ -28,23 +28,23 @@ Current Boxes
 
 KVM Guests:
 
-+ kemukins-6.4-x86_64.kvm.box
-+ kemukins-6.5-x86_64.kvm.box
-+ kemukins-6.6-x86_64.kvm.box
++ kemumaki-6.4-x86_64.kvm.box
++ kemumaki-6.5-x86_64.kvm.box
++ kemumaki-6.6-x86_64.kvm.box
 + minimal-6.3-x86_64.kvm.box
 + minimal-6.4-x86_64.kvm.box
 + minimal-6.5-x86_64.kvm.box
 + minimal-6.6-x86_64.kvm.box
-+ vzkemukins-6.6-x86_64.kvm.box
-+ lxckemukins-6.6-x86_64.kvm.box
++ vzkemumaki-6.6-x86_64.kvm.box
++ lxckemumaki-6.6-x86_64.kvm.box
 
 OpenVZ Container(s):
 
-+ vz.kemukins.x86_64.tar.gz (on vzkemukins-6.6-x86_64)
++ vz.kemumaki.x86_64.tar.gz (on vzkemumaki-6.6-x86_64)
 
 Linux Container(s):
 
-+ vz.kemukins.x86_64.tar.gz (on lxckemukins-6.6-x86_64)
++ vz.kemumaki.x86_64.tar.gz (on lxckemumaki-6.6-x86_64)
 
 Build Environment
 -----------------
