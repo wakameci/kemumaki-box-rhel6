@@ -11,5 +11,5 @@ for ctid in 10{1..3}; do
     vzctl stop ${ctid}
     vzctl destroy ${ctid}
   fi
-  /home/kemukins/vzctl.sh ${ctid}
+  /home/kemumaki/vzctl.sh ${ctid}
 done
