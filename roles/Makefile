@@ -1,29 +1,32 @@
-VMS=kvm.kemukins kvm.minimal kvm.vzkemukins vagrant.virtualbox.kemukins vagrant.virtualbox.vzkemukins virtualbox.kemukins virtualbox.vzkemukins vz.kemukins
+VMS=kvm.kemumaki kvm.lxckemumaki kvm.minimal kvm.vzkemumaki vagrant.virtualbox.kemumaki vagrant.virtualbox.vzkemumaki virtualbox.kemumaki virtualbox.vzkemumaki vz.kemumaki
 
 all:
 
-kvm.kemukins:
+kvm.kemumaki:
+	(cd $@ && make)
+
+kvm.lxckemumaki:
 	(cd $@ && make)
 
 kvm.minimal:
 	(cd $@ && make)
 
-kvm.vzkemukins:
+kvm.vzkemumaki:
 	(cd $@ && make)
 
-vagrant.virtualbox.kemukins:
+vagrant.virtualbox.kemumaki:
 	(cd $@ && make)
 
-vagrant.virtualbox.vzkemukins:
+vagrant.virtualbox.vzkemumaki:
 	(cd $@ && make)
 
-virtualbox.kemukins:
+virtualbox.kemumaki:
 	(cd $@ && make)
 
-virtualbox.vzkemukins:
+virtualbox.vzkemumaki:
 	(cd $@ && make)
 
-vz.kemukins:
+vz.kemumaki:
 	(cd $@ && make)
 
 .PHONY: $(VMS)
