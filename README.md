@@ -21,7 +21,7 @@ Accounts
 | username | password |
 |:---------|:---------|
 | root     | (locked) |
-| kemukins | kemukins |
+| kemumaki | kemumaki |
 
 Current Boxes
 -------------
