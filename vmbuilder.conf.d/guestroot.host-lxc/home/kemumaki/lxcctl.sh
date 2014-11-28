@@ -17,7 +17,7 @@ lxc.network.type = veth
 lxc.network.flags = up
 lxc.network.link = lxcbr0
 lxc.network.name = eth0
-lxc.network.mtu = 1472
+#lxc.network.mtu = 1472
 lxc.network.hwaddr = 52:54:00:$(LANG=C LC_ALL=C date +%H:%M:%S)
 lxc.rootfs = /lxc/private/${ctid}
 lxc.rootfs.mount = /lxc/private/${ctid}
@@ -67,7 +67,7 @@ BROADCAST=172.16.254.255
 GATEWAY=172.16.254.1
 IPADDR=172.16.254.${ctid}
 NETMASK=255.255.255.0
-MTU=1472
+#MTU=1472
 EOS
 }
 
