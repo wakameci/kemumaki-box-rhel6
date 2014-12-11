@@ -140,6 +140,8 @@ Only for OpenVZ Container based build worker
 + chrpath
 + rpmdevtools
 + epel-release
++ libyaml
++ libyaml-devel
 
 Links
 -----
