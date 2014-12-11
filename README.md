@@ -103,6 +103,7 @@ Build Environment
 + parted
 + kpartx
 + zip
++ tar
 
 ### Networking tools
 
@@ -140,6 +141,8 @@ Only for OpenVZ Container based build worker
 + chrpath
 + rpmdevtools
 + epel-release
++ libyaml
++ libyaml-devel
 
 Links
 -----
