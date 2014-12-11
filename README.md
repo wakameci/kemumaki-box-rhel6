@@ -103,6 +103,7 @@ Build Environment
 + parted
 + kpartx
 + zip
++ tar
 
 ### Networking tools
 
