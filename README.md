@@ -134,8 +134,6 @@ Build Environment
 
 ### RSpec &amp; FPM for Wakame-vdc &amp; OpenVNet
 
-Only for OpenVZ Container based build worker
-
 + yum-utils
 + mysql-server
 + sqlite-devel
