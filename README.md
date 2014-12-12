@@ -95,6 +95,8 @@ Build Environment
 ### Ruby build tools
 
 + readline-devel
++ libyaml
++ libyaml-devel
 
 ### VM image build tools
 
@@ -141,8 +143,6 @@ Only for OpenVZ Container based build worker
 + chrpath
 + rpmdevtools
 + epel-release
-+ libyaml
-+ libyaml-devel
 
 Links
 -----
