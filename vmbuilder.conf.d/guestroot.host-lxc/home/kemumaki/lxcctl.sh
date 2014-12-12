@@ -22,9 +22,19 @@ lxc.network.hwaddr = 52:54:00:$(LANG=C LC_ALL=C date +%H:%M:%S)
 lxc.rootfs = /lxc/private/${ctid}
 lxc.rootfs.mount = /lxc/private/${ctid}
 
+# via https://lists.linuxcontainers.org/pipermail/lxc-users/2014-October/007907.html
+# [lxc-users] systemd's journald using 100% CPU on Debian Jessie container and Fedora 20 host
+lxc.kmsg = 0
+
 #lxc.mount.entry = devpts /lxc/private/${ctid}/dev/pts                devpts  gid=5,mode=620  0 0
 lxc.mount.entry = proc   /lxc/private/${ctid}/proc                   proc    defaults        0 0
 lxc.mount.entry = sysfs  /lxc/private/${ctid}/sys                    sysfs   defaults        0 0
+
+# via http://www.janoszen.com/2013/05/14/lxc-tutorial/
+# > Allow any mknod (but not using the node)
+# one of usage is for /dev/loopX
+lxc.cgroup.devices.allow = c *:* m
+lxc.cgroup.devices.allow = b *:* m
 
 # /dev/null and zero
 lxc.cgroup.devices.allow = c 1:3 rwm
@@ -44,6 +54,28 @@ lxc.cgroup.devices.allow = c 5:2 rwm
 
 # rtc
 lxc.cgroup.devices.allow = c 254:0 rwm
+
+# kvm
+lxc.cgroup.devices.allow = c 232:10 rwm
+
+# net/tun
+lxc.cgroup.devices.allow = c 10:200 rwm
+
+# nbd
+#lxc.cgroup.devices.allow = c 43:* rwm
+
+# fuse
+#lxc.cgroup.devices.allow = c 10:229 rwm
+
+# hpet
+#lxc.cgroup.devices.allow = c 10:228 rwm
+
+# control device-mapper
+# via https://lists.linuxcontainers.org/pipermail/lxc-users/2014-January/006077.html
+lxc.cgroup.devices.allow = c 10:236 rwm
+lxc.cgroup.devices.allow = b 252:* rwm
+# dm-X control/loopXpX
+lxc.cgroup.devices.allow = b 253:* rwm
 EOS
 }
 
