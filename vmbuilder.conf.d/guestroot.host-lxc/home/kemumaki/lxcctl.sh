@@ -79,6 +79,16 @@ function install_ifcfg() {
   chmod 644 ${ifcfg_path}
 }
 
+function render_lxc_udev() {
+  cat <<EOS
+start on startup
+exec /sbin/udevd
+EOS
+}
+
+function install_lxc_udev() {
+  render_lxc_udev | tee /lxc/private/${ctid}/etc/init/lxc-udev.conf
+}
 
 ## main
 
@@ -90,6 +100,7 @@ sed -i s,^HOSTNAME=.*,HOSTNAME=ct${ctid}.$(hostname), /lxc/private/${ctid}/etc/s
 
 install_lxc_conf ${ctid}
 install_ifcfg    ${ctid}
+install_lxc_udev ${ctid}
 
 lxc-create -f /etc/lxc/${ctid}.conf -n ${ctid}
 lxc-start -n ${ctid} -d -l DEBUG -o /var/log/lxc/${ctid}.log
