@@ -95,6 +95,8 @@ Build Environment
 ### Ruby build tools
 
 + readline-devel
++ libyaml
++ libyaml-devel
 
 ### VM image build tools
 
@@ -132,8 +134,6 @@ Build Environment
 
 ### RSpec &amp; FPM for Wakame-vdc &amp; OpenVNet
 
-Only for OpenVZ Container based build worker
-
 + yum-utils
 + mysql-server
 + sqlite-devel
@@ -141,8 +141,6 @@ Only for OpenVZ Container based build worker
 + chrpath
 + rpmdevtools
 + epel-release
-+ libyaml
-+ libyaml-devel
 
 Links
 -----
