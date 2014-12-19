@@ -145,6 +145,5 @@ Build Environment
 Links
 -----
 
-+ [buildshelf-rhel6-setup](https://github.com/hansode/buildshelf-rhel6-setup)
-+ [buidbook-rhel6](https://github.com/hansode/buildbook-rhel6)
++ [buidbook-rhel6](https://github.com/wakameci/buildbook-rhel6)
 + [vmbuider](https://github.com/hansode/vmbuilder)
