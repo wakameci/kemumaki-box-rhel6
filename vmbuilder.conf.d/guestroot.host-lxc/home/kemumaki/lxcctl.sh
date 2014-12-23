@@ -136,6 +136,7 @@ install_lxc_udev ${ctid}
 
 lxc-create -f /etc/lxc/${ctid}.conf -n ${ctid}
 lxc-start -n ${ctid} -d -l DEBUG -o /var/log/lxc/${ctid}.log
+lxc-wait  -n ${ctid} -s RUNNING
 
 ### add device
 
