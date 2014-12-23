@@ -6,6 +6,8 @@
 set -e
 set -x
 
+PATH=/bin:/usr/bin:/sbin:/usr/sbin
+
 function render_lxc_conf() {
   local ctid=${1:-101}
 
@@ -136,6 +138,7 @@ install_lxc_udev ${ctid}
 
 lxc-create -f /etc/lxc/${ctid}.conf -n ${ctid}
 lxc-start -n ${ctid} -d -l DEBUG -o /var/log/lxc/${ctid}.log
+lxc-wait  -n ${ctid} -s RUNNING
 
 ### add device
 
