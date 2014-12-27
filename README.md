@@ -3,6 +3,30 @@ kemumaki-box-rhel6
 
 Kemumaki build environment provides rpmbuild and vmimage file build.
 
+Usage
+-----
+
+Select flavor of vmimage.
+
+```
+$ cd roles
+$ ls
+kvm.kemumaki  kvm.lxckemumaki  kvm.minimal
+$ cd kvm.minimal
+```
+
+Create vmimage.
+
+```
+$ sudo make
+```
+
+Generate box file.
+
+```
+$ sudo ./pack-box.sh
+```
+
 General
 -------
 

@@ -1,6 +1,6 @@
 SHELL=/bin/bash
 
-all:
+all: build
 
 build:
 	time sudo ../../vendor/vmbuilder/kvm/rhel/6/vmbuilder.sh --config-path ./vmbuilder.conf
