@@ -6,6 +6,9 @@
 
 touch /var/lock/subsys/local
 
+# warm-up device-mapper
+/home/kemumaki/check-dm.sh
+
 for ctid in 10{1..3}; do
   if [[ -d /lxc/private/${ctid} ]]; then
     lxc-stop    -n ${ctid}
