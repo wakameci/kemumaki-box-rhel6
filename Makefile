@@ -1,6 +1,6 @@
 SHELL=/bin/bash
 
-all:
+all: setup
 
 setup:
 	git submodule update --init --recursive
