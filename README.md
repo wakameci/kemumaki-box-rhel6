@@ -6,6 +6,12 @@ Kemumaki build environment provides rpmbuild and vmimage file build.
 Usage
 -----
 
+Setup submodule(s).
+
+```
+$ make
+```
+
 Select flavor of vmimage.
 
 ```
