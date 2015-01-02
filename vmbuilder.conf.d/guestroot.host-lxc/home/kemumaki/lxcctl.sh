@@ -121,7 +121,10 @@ EOS
 }
 
 function install_lxc_udev() {
-  render_lxc_udev | tee /lxc/private/${ctid}/etc/init/lxc-udev.conf
+  # upstart
+  if [[ -d /lxc/private/${ctid}/etc/init ]]; then
+    render_lxc_udev | tee /lxc/private/${ctid}/etc/init/lxc-udev.conf
+  fi
 }
 
 ## main
@@ -153,5 +156,14 @@ for i in {0..127}; do
 lxc-attach -n ${ctid} -- bash -ex <<-EOS
   [[ -b /dev/loop${i} ]] || mknod /dev/loop${i} -m 660 b   7 ${i}
   [[ -b /dev/dm-${i}  ]] || mknod /dev/dm-${i}  -m 660 b 253 ${i}
+EOS
+done
+
+# uid/gid mapping for more than linux 3.8 namespace
+for i in kemumaki jenkins; do
+lxc-attach -n ${ctid} -- bash -ex <<-EOS
+  if id ${i}; then
+    chown -R ${i}:${i} "$(getent passwd ${i} | awk -F: '{print $6}')"
+  fi
 EOS
 done
