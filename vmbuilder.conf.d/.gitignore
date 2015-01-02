@@ -1,2 +1,5 @@
 *.raw
 *.pid
+*.vmdk
+*.box
+rootfs/
