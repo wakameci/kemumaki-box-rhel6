@@ -146,8 +146,13 @@ lxc-wait  -n ${ctid} -s RUNNING
 ### add device
 
 lxc-attach -n ${ctid} -- bash -ex <<-EOS
-  [[ -c /dev/kvm     ]] || mknod -m 666 /dev/kvm     c 10 232
-  [[ -c /dev/net/tun ]] || mknod -m 666 /dev/net/tun c 10 200
+  [[ -c /dev/kvm     ]] || {
+    mknod -m 666 /dev/kvm     c 10 232
+  }
+  [[ -c /dev/net/tun ]] || {
+    mkdir -p     /dev/net
+    mknod -m 666 /dev/net/tun c 10 200
+   }
 EOS
 
 # > PTY allocation request failed on channel 0
