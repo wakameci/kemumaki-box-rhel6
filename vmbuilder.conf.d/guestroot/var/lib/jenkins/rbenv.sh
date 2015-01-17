@@ -19,6 +19,7 @@ function setup_rbenv() {
   fi
   cd ${HOME}/.rbenv
   git checkout master
+  git pull
 }
 
 function setup_rubybuild() {
@@ -27,6 +28,7 @@ function setup_rubybuild() {
   fi
   cd ${HOME}/.rbenv/plugins/ruby-build
   git checkout master
+  git pull
 }
 
 function rbenv() {
