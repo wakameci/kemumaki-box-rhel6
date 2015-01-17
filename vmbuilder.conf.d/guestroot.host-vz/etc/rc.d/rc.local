@@ -3,13 +3,20 @@
 # This script will be executed *after* all the other init scripts.
 # You can put your own initialization stuff in here if you don't
 # want to do the full Sys V style init stuff.
+echo "/etc/rc.d/rc.local ${@}"
 
 touch /var/lock/subsys/local
 
-for ctid in 10{1..3}; do
-  if [[ -d /vz/root/${ctid} ]]; then
-    vzctl stop ${ctid}
-    vzctl destroy ${ctid}
-  fi
-  /home/kemumaki/vzctl.sh ${ctid}
-done
+case "${1}" in
+  start)
+    for ctid in 10{1..3}; do
+      if [[ -d /vz/root/${ctid} ]]; then
+        vzctl stop ${ctid}
+        vzctl destroy ${ctid}
+      fi
+      /home/kemumaki/vzctl.sh ${ctid}
+    done
+    ;;
+  *)
+    ;;
+esac
