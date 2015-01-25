@@ -85,25 +85,25 @@ Build Environment
    + java-1.6.0-openjdk
    + dejavu-sans-fonts
 + jenkins plugins
-   + PrioritySorter 1.3
-   + config-autorefresh-plugin
-   + configurationslicing
-   + config-file-provider
-   + cron_column
-   + downstream-buildview
-   + git        1.4.0
-   + git-client 1.1.1
-   + hipchat 0.1.5
-   + greenballs
-   + managed-scripts 1.1
-   + nested-view
-   + next-executions
-   + parameterized-trigger 2.18
-   + rebuild 1.20
-   + timestamper 1.5.6
-   + token-macro
-   + urltrigger
-   + view-job-filters
+   + [PrioritySorter](https://wiki.jenkins-ci.org/display/JENKINS/Priority+Sorter+Plugin) 1.3
+   + [config-autorefresh-plugin](https://wiki.jenkins-ci.org/display/JENKINS/Config+AutoRefresh+Plugin)
+   + [configurationslicing](https://wiki.jenkins-ci.org/display/JENKINS/Configuration+Slicing+Plugin)
+   + [config-file-provider](https://wiki.jenkins-ci.org/display/JENKINS/Config+File+Provider+Plugin)
+   + [cron_column](https://wiki.jenkins-ci.org/display/JENKINS/Cron+Column+Plugin)
+   + [downstream-buildview](https://wiki.jenkins-ci.org/display/JENKINS/Downstream+buildview+plugin)
+   + [git](https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin)        1.4.0
+   + [git-client](https://wiki.jenkins-ci.org/display/JENKINS/Git+Client+Plugin) 1.1.1
+   + [hipchat](https://wiki.jenkins-ci.org/display/JENKINS/HipChat+Plugin) 0.1.5
+   + [greenballs](https://wiki.jenkins-ci.org/display/JENKINS/Green+Balls)
+   + [managed-scripts](https://wiki.jenkins-ci.org/display/JENKINS/Managed+Script+Plugin) 1.1
+   + [nested-view](https://wiki.jenkins-ci.org/display/JENKINS/Nested+View+Plugin)
+   + [next-executions](https://wiki.jenkins-ci.org/display/JENKINS/Next+Executions)
+   + [parameterized-trigger](https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Trigger+Plugin) 2.18
+   + [rebuild](https://wiki.jenkins-ci.org/display/JENKINS/Rebuild+Plugin) 1.20
+   + [timestamper](https://wiki.jenkins-ci.org/display/JENKINS/Timestamper) 1.5.6
+   + [token-macro](https://wiki.jenkins-ci.org/display/JENKINS/Token+Macro+Plugin)
+   + [urltrigger](https://wiki.jenkins-ci.org/display/JENKINS/URLTrigger+Plugin)
+   + [view-job-filters](https://wiki.jenkins-ci.org/display/JENKINS/View+Job+Filters)
 
 ### SCM tool
 
