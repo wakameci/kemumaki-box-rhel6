@@ -85,22 +85,24 @@ Build Environment
    + java-1.6.0-openjdk
    + dejavu-sans-fonts
 + jenkins plugins
-   + [PrioritySorter](https://wiki.jenkins-ci.org/display/JENKINS/Priority+Sorter+Plugin) 1.3
+   + [PrioritySorter](https://wiki.jenkins-ci.org/display/JENKINS/Priority+Sorter+Plugin)
    + [config-autorefresh-plugin](https://wiki.jenkins-ci.org/display/JENKINS/Config+AutoRefresh+Plugin)
-   + [configurationslicing](https://wiki.jenkins-ci.org/display/JENKINS/Configuration+Slicing+Plugin)
    + [config-file-provider](https://wiki.jenkins-ci.org/display/JENKINS/Config+File+Provider+Plugin)
+   + [configurationslicing](https://wiki.jenkins-ci.org/display/JENKINS/Configuration+Slicing+Plugin)
    + [cron_column](https://wiki.jenkins-ci.org/display/JENKINS/Cron+Column+Plugin)
    + [downstream-buildview](https://wiki.jenkins-ci.org/display/JENKINS/Downstream+buildview+plugin)
    + [git](https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin)        1.4.0
    + [git-client](https://wiki.jenkins-ci.org/display/JENKINS/Git+Client+Plugin) 1.1.1
-   + [hipchat](https://wiki.jenkins-ci.org/display/JENKINS/HipChat+Plugin) 0.1.5
+   + [github-api](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+API+Plugin)
+   + [github-oauth](https://wiki.jenkins-ci.org/display/JENKINS/Github+OAuth+Plugin)
    + [greenballs](https://wiki.jenkins-ci.org/display/JENKINS/Green+Balls)
-   + [managed-scripts](https://wiki.jenkins-ci.org/display/JENKINS/Managed+Script+Plugin) 1.1
+   + [hipchat](https://wiki.jenkins-ci.org/display/JENKINS/HipChat+Plugin)
+   + [managed-scripts](https://wiki.jenkins-ci.org/display/JENKINS/Managed+Script+Plugin)
    + [nested-view](https://wiki.jenkins-ci.org/display/JENKINS/Nested+View+Plugin)
    + [next-executions](https://wiki.jenkins-ci.org/display/JENKINS/Next+Executions)
-   + [parameterized-trigger](https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Trigger+Plugin) 2.18
-   + [rebuild](https://wiki.jenkins-ci.org/display/JENKINS/Rebuild+Plugin) 1.20
-   + [timestamper](https://wiki.jenkins-ci.org/display/JENKINS/Timestamper) 1.5.6
+   + [parameterized-trigger](https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Trigger+Plugin)
+   + [rebuild](https://wiki.jenkins-ci.org/display/JENKINS/Rebuild+Plugin)
+   + [timestamper](https://wiki.jenkins-ci.org/display/JENKINS/Timestamper)
    + [token-macro](https://wiki.jenkins-ci.org/display/JENKINS/Token+Macro+Plugin)
    + [urltrigger](https://wiki.jenkins-ci.org/display/JENKINS/URLTrigger+Plugin)
    + [view-job-filters](https://wiki.jenkins-ci.org/display/JENKINS/View+Job+Filters)
