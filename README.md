@@ -101,6 +101,7 @@ Build Environment
    + [nested-view](https://wiki.jenkins-ci.org/display/JENKINS/Nested+View+Plugin)
    + [next-executions](https://wiki.jenkins-ci.org/display/JENKINS/Next+Executions)
    + [parameterized-trigger](https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Trigger+Plugin)
+   + [rbenv](https://wiki.jenkins-ci.org/display/JENKINS/Rbenv+Plugin)
    + [rebuild](https://wiki.jenkins-ci.org/display/JENKINS/Rebuild+Plugin)
    + [timestamper](https://wiki.jenkins-ci.org/display/JENKINS/Timestamper)
    + [token-macro](https://wiki.jenkins-ci.org/display/JENKINS/Token+Macro+Plugin)
