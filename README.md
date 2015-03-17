@@ -67,6 +67,7 @@ KVM Guests:
 + minimal-6.6-x86_64.kvm.box
 + vzkemumaki-6.6-x86_64.kvm.box
 + lxckemumaki-6.6-x86_64.kvm.box
++ kagechiyo-6.6-x86_64.kvm.box
 
 OpenVZ Container(s):
 
@@ -185,5 +186,5 @@ Build Environment
 Links
 -----
 
-+ [buidbook-rhel6](https://github.com/wakameci/buildbook-rhel6)
++ [buidbook-rhel7](https://github.com/wakameci/buildbook-rhel7)
 + [vmbuider](https://github.com/hansode/vmbuilder)
