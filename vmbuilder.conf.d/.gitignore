@@ -2,4 +2,5 @@
 *.pid
 *.vmdk
 *.box
+*.rpm-qa
 rootfs/
