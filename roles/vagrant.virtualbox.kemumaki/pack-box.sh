@@ -7,4 +7,5 @@ set -e
 
 . ./vmbuilder.conf
 
-time tar zScvf kemumaki-${distro_ver}-x86_64.virtualbox.box box-disk1.raw
+sudo ../../helpers/list-installed-rpm.sh
+time tar zScvf kemumaki-${distro_ver}-x86_64.virtualbox.box box-disk1.raw box-disk1.rpm-qa
