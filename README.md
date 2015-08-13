@@ -186,5 +186,5 @@ Build Environment
 Links
 -----
 
-+ [buildbook-rhel7](https://github.com/wakameci/buildbook-rhel7)
++ [buildbook-rhel6](https://github.com/wakameci/buildbook-rhel6)
 + [vmbuider](https://github.com/hansode/vmbuilder)
