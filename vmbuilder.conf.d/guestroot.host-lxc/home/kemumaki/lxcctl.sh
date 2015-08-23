@@ -13,7 +13,7 @@ function render_lxc_conf() {
 
   cat <<EOS
 lxc.utsname = ct${ctid}.$(hostname)
-lxc.tty = 6
+#lxc.tty = 6
 #lxc.pts = 1024
 lxc.network.type = veth
 lxc.network.flags = up
@@ -78,6 +78,9 @@ lxc.cgroup.devices.allow = c 10:236 rwm
 lxc.cgroup.devices.allow = b 252:* rwm
 # dm-X control/loopXpX
 lxc.cgroup.devices.allow = b 253:* rwm
+
+# CAP_SYS_MODULE: load/unload module
+lxc.cap.drop = sys_module
 EOS
 }
 
